@@ -338,8 +338,7 @@ EndFunc
 Func CheckProfessionsUnlockCode()
     If $EnableProfessions Or $UnattendedModeCheckSettings Then Return
     _Crypt_Startup()
-    If Not $EnableProfessions Then $EnableProfessions = CheckProfessionsUnlockCodeData("225BA7083CE6B485BE95CBDAF18CF6D025C4D7F3", "ProfessionsUnlockCode", "UnlockProfessions", "EnterProfessionsUnlockCode", "BuyProfessionsUnlockCode", "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UQRNUA698EUTC")
-    ;If $EnableProfessions And Not $EnableOptionalAssets Then $EnableOptionalAssets = CheckProfessionsUnlockCodeData("07016EDD9A3CB06164336D062698BFF2566696CF", "OptionalAssetsUnlockCode", "UnlockOptionalAssets", "EnterOptionalAssetsUnlockCode", "BuyOptionalAssetsUnlockCode", "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LWTPB6AEB4V86")
+    If Not $EnableProfessions Then $EnableProfessions = CheckProfessionsUnlockCodeData("302D7ECE52C5520A0C3F9CE14F7805DD7F1D4346", "ProfessionsUnlockCode", "UnlockProfessions", "EnterProfessionsUnlockCode", "BuyProfessionsUnlockCode", "https://www.arcgames.com/en/forums/neverwinter/#/search?Search=Profession+Bot")
     _Crypt_Shutdown()
 EndFunc
 
