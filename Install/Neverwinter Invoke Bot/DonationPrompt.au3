@@ -12,8 +12,7 @@ While 1
     If GetAllAccountsValue("TotalOverflowXPRewards") Then $text &= @CRLF & @CRLF & Localize("TotalOverflowXPRewardsCollected", "<COUNT>", _AddCommaToNumber(GetAllAccountsValue("TotalOverflowXPRewards")))
     If GetAllAccountsValue("TotalVIPCharacterRewards") Then $text &= @CRLF & @CRLF & Localize("TotalVIPCharacterRewardsCollected", "<COUNT>", _AddCommaToNumber(GetAllAccountsValue("TotalVIPCharacterRewards")))
     If GetAllAccountsValue("TotalVIPAccountRewards") Then $text &= @CRLF & @CRLF & Localize("TotalVIPAccountRewardsCollected", "<COUNT>", _AddCommaToNumber(GetAllAccountsValue("TotalVIPAccountRewards")))
-    Local $msg = MsgBox($MB_YESNO + $MB_ICONQUESTION, $Title, $text & @CRLF & @CRLF & @CRLF & Localize("DonateNow"), 900)
-    If $msg = $IDYES Then Exit ShellExecute(@ScriptDir & "\Donation.html")
+    Local $msg = MsgBox($MB_OK + $MB_ICONWARNING, $Title, $text, 900)
     If $msg <> $IDTIMEOUT Then Exit
     While _Singleton($Name & "Jp4g9QRntjYP", 1) = 0
         Sleep(1000)
